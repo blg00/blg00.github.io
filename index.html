@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Comisiones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="number" id="rentaservicio" placeholder="RENTA">
+        <select id="tventa">
+            <option value="CON EQUIPO">CON EQUIPO</option>
+            <option value="SIN EQUIPO">SIN EQUIPO</option>
+        </select>
+        <select id="tservicio">
+            <option value="POSPAGO">POSPAGO</option>
+            <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <p>COMISION</p>
+        <p class="resultado" id="resultado"></p>
+        <div>
+        <button onclick="calcularComision()">Calcular</button>
+        </div>
+    </div>
+    
+    <script src="operecion.js"></script>
+</body>
+</html>
